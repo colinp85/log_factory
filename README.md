@@ -24,6 +24,14 @@ logger.info('hello!')
 
 ## Installation
 
+From PIP:
+
+```bash
+pip install log_factory
+```
+
+Or pulled from git master:
+
 ```bash
 pip install git+https://github.com/colinp85/log_factory
 ```
