@@ -32,13 +32,17 @@ def set_log_level(lvl):
             handler.setLevel(lvl)
 
 
-def add_file_handler(filename, fmt=default_fmt):
+def add_file_handler(filename, fmt=default_fmt, lvl=logging.INFO):
     file_formatter = \
         logging.Formatter(fmt)
 
     fh = logging.FileHandler(filename, mode='w')
-    fh.setLevel(logging.INFO)
+    fh.setLevel(lvl)
     fh.setFormatter(file_formatter)
     fh.propagate = False
 
     root_logger.addHandler(fh)
+
+
+def get_logger(name=''):
+    return logging.getLogger(name)
