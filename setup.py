@@ -8,5 +8,5 @@ setup(
     url='https://github.com/colinp85/log_factory',
     author='cp',
     license='MIT',
-    python_requires='>=2.6, >=3.*'
+    python_requires='>=2.6'
 )
